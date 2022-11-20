@@ -23,7 +23,11 @@ function main() {
     }
 
     drawCloud(-150, 150);
-    drawQuestionMark(150, 130);
+    goto(25, -250);
+    green();
+    goto(50, -250);
+    right(90)
+    tall();
 
 }
 function drawCloud(x, y) {
@@ -136,7 +140,7 @@ function strafe(distance) {
 
 function green()
 {
-    goto(25, -250);
+    
     colour(78,188,0, 1);
     width(20);
     forward(50);
@@ -145,8 +149,18 @@ function green()
     left(180);
     forward(40);
  }
-
-
+ 
+ function tall()
+{
+    
+    colour(78,188,0, 1);
+    width(20);
+    forward(100);
+    right(90);
+    forward(20);
+    left(180);
+    forward(40);
+ }
 
 /* End of chimney section */
 
