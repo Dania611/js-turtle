@@ -132,39 +132,23 @@ function strafe(distance) {
 
 /* end of brick section */
 
-/* This is the question mark section */
+/* This is the green chimney section */
 
-function drawQuestionMark(x, y) {
-    goto(x, y);
-    drawQuarterCircle(3, 0.5, 0);
+function green()
+{
+    goto(25, -250);
+    colour(78,188,0, 1);
+    width(20);
+    forward(50);
     right(90);
-    goto(x, y);
-    right(90);
-    forward(10);
-    left(90);
-    drawQuarterCircle(3, 0.3, 0);
-    forward(10);
-    left(90);
-    forward(30);
-    left(90);
-    forward(10);
-    left(90)
     forward(20);
+    left(180);
+    forward(40);
+ }
 
-    right(180);
-    penup();
-    forward(35);
 
-    right(90);
-    forward(10);
-    pendown();
 
-    right(90);
-    drawQuarterCircle(4, 0.1, 0);
-    hideTurtle();
-}
-
-/* End of question mark section */
+/* End of chimney section */
 
 function drawQuarterCircle(count, size, angle) {
     for (var i = 0; i < count; i++) {
